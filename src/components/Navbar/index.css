@@ -151,7 +151,7 @@ body.dark .nav-links li.active {
 /* Theme button dark */
 body.dark .theme-btn {
   background: rgba(255,255,255,0.1);
-  color: #10b981;
+  color: #FCE570;
 }
 
 body.dark .theme-btn:hover {
