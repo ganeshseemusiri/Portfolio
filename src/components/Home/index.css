@@ -1,0 +1,124 @@
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background 0.4s ease;
+}
+/* ☀️ LIGHT MODE HOME */
+body:not(.dark) .home {
+  background-color: #f0fdfa;
+  background-image:
+    radial-gradient(
+      circle at left,
+      rgba(167, 243, 208, 0.6),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at right,
+      rgba(147, 197, 253, 0.6),
+      transparent 45%
+    );
+}
+/* 🌙 DARK MODE HOME */
+body.dark .home {
+  background-color: #020617;
+  color: white;
+  background-image:
+    radial-gradient(
+      circle at left,
+      rgba(16, 185, 129, 0.35),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at right,
+      rgba(34, 211, 153, 0.35),
+      transparent 45%
+    );
+}
+
+
+
+
+.home-content {
+  max-width: 800px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.title span {
+  color: #10b981;
+}
+
+.role {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* 🔥 SIMPLE ICON STYLE (LIKE IMAGE) */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 32px;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #4b5563; /* gray */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #10b981; /* green on hover */
+  transform: rotate(10deg);
+}
+
+/* BUTTONS */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.primary-btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background: #10b981;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: 1px solid #10b981;
+  background: transparent;
+  color: #10b981;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+  }
+}

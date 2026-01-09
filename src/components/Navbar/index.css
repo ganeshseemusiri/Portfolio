@@ -1,0 +1,187 @@
+/* =========================
+   NAVBAR BASE
+========================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  z-index: 100;
+}
+
+.logo {
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+/* Desktop Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s ease;
+  color: #0f172a;
+}
+
+.nav-links li:hover {
+  background: #f3f4f6;
+}
+
+.nav-links .active {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+/* Right Buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.theme-btn,
+.hamburger {
+  border: none;
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.theme-btn:hover,
+.hamburger:hover {
+  background: #e5e7eb;
+}
+
+/* Mobile Menu Trigger */
+.hamburger {
+  display: none;
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  list-style: none;
+}
+
+.mobile-menu li {
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.mobile-menu li:hover {
+  background: #f3f4f6;
+}
+
+.mobile-menu .active {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* =========================
+   DARK MODE NAVBAR
+========================= */
+
+body.dark .navbar {
+  background: linear-gradient(135deg, #063a3a, #020617, #064e3b);
+  box-shadow: none;
+}
+
+body.dark .logo {
+  color: #e5e7eb;
+}
+
+/* Desktop links dark */
+body.dark .nav-links li {
+  color: #e5e7eb;
+}
+
+body.dark .nav-links li:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+body.dark .nav-links li.active {
+  background: rgba(16,185,129,0.25);
+  color: #10b981;
+}
+
+/* Theme button dark */
+body.dark .theme-btn {
+  background: rgba(255,255,255,0.1);
+  color: #10b981;
+}
+
+body.dark .theme-btn:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* Hamburger dark */
+body.dark .hamburger {
+  background: rgba(255,255,255,0.1);
+  color: #e5e7eb;
+}
+
+body.dark .hamburger:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* Mobile dark */
+body.dark .mobile-menu {
+  background: linear-gradient(135deg, #063a3a, #020617, #064e3b);
+}
+
+body.dark .mobile-menu li {
+  color: #e5e7eb;
+}
+
+body.dark .mobile-menu li:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+body.dark .mobile-menu li.active {
+  background: rgba(16,185,129,0.25);
+  color: #10b981;
+}

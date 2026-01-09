@@ -1,0 +1,162 @@
+/* =========================
+   PROJECTS SECTION
+   ========================= */
+
+.projects {
+  padding: 80px 60px;
+  background: linear-gradient(
+    135deg,
+    #e8fffa,
+    #d9f8ff,
+    #ffffff
+  );
+  color: #0f172a;
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  color: inherit;
+}
+
+/* Cards Grid */
+.projects-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Project Card (Light) */
+.project-card {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Description */
+.description {
+  color: #4b5563;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Tech badges */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech {
+  background: #ecfeff;
+  color: #0369a1;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* Buttons */
+.project-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.project-buttons a {
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.project-buttons a:first-child {
+  background: #10b981;
+  color: white;
+}
+
+.project-buttons a:last-child {
+  border: 2px solid #10b981;
+  color: #10b981;
+}
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark .projects {
+  background: linear-gradient(
+    135deg,
+    #063a3a,
+    #020617,
+    #064e3b
+  );
+  color: #e5e7eb;
+}
+
+body.dark .project-card {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: none;
+}
+
+body.dark .description {
+  color: #cbd5f5;
+}
+
+/* Dark Tech badges */
+body.dark .tech {
+  background: rgba(16,185,129,0.2);
+  color: #4df2c5;
+}
+
+/* Dark buttons */
+body.dark .project-buttons a:first-child {
+  background: #10b981;
+  color: #ffffff;
+}
+
+body.dark .project-buttons a:last-child {
+  border: 2px solid #10b981;
+  color: #10b981;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 992px) {
+  .projects {
+    padding: 60px 30px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .project-buttons {
+    flex-direction: column;
+  }
+  .project-buttons a {
+    text-align: center;
+  }
+}

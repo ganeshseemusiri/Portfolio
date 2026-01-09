@@ -1,0 +1,105 @@
+/* =========================
+   SKILLS SECTION
+   ========================= */
+
+.skills {
+  padding: 80px 60px;
+  background: linear-gradient(
+    135deg,
+    #e8fffa,
+    #d9f8ff,
+    #ffffff
+  );
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+/* Grid Layout */
+.skills-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Skill Card (Light Mode) */
+.skill-card {
+  background: white;
+  border-radius: 18px;
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.skill-icon {
+  font-size: 2.6rem;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+.skill-card p {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* =============================
+   🌙 DARK MODE - SKILLS
+   ============================= */
+
+body.dark .skills {
+  background: linear-gradient(
+    135deg,
+    #063a3a,
+    #020617,
+    #064e3b
+  );
+}
+
+body.dark .section-title {
+  color: #e5e7eb;
+}
+
+body.dark .skill-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: none;
+}
+
+body.dark .skill-card p {
+  color: #cbd5f5;
+}
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+
+@media (max-width: 992px) {
+  .skills {
+    padding: 60px 30px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
