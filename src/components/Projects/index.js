@@ -2,11 +2,36 @@ import { motion } from 'framer-motion'
 import './index.css'
 
 const projectsList = [
+  
+  {
+    title: 'DevMentor AI',
+    description:
+      'Built an AI-powered developer assistant using React, Node.js, and MongoDB that provides real-time coding help through a chat interface with secure user authentication.',
+    tech: ['React','CSS','Axios', 'Node.js', 'Express', "MongoDB",'JWT, bcrypt', 'OpenRouter'],
+    github: 'https://github.com/ganeshseemusiri/DevMentor-AI',
+    live: 'https://dev-mentor-ai-hndk.vercel.app/',
+  },
+  {
+    title: 'Career Finder',
+    description:
+      'Built a full-stack job search platform using React, Node.js, and MongoDB with secure authentication, job listings, and application tracking features.',
+    tech: ['React','CSS', 'Axios', 'Node.js', 'Express', "MongoDB",'JWT, bcrypt',],
+    github: 'https://github.com/ganeshseemusiri/Career-Finder',
+    live: 'https://career-finder-95yv.vercel.app/',
+  },
+  {
+    title: 'Study Tracker',
+    description:
+      'Developed a study planning and tracking app using React that allows users to manage tasks, set goals, and track learning progress with a simple and responsive UI.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/ganeshseemusiri/Study-Tracker',
+    live: 'https://ganeshseemusiri.github.io/Study-Tracker/',
+  },
   {
     title: 'Nxt Watch',
     description:
       'A YouTube-like platform with authentication, protected routes, and dark/light theme.',
-    tech: ['React', 'CSS', 'JWT', 'REST API'],
+    tech: ['React', 'CSS', 'JWT', 'REST API',],
     github: 'https://github.com/ganeshseemusiri/NXT-Watch',
     live: 'https://ganeshnxtwatch.ccbp.tech/',
   },
@@ -17,14 +42,6 @@ const projectsList = [
     tech: ['React', 'CSS', 'API'],
     github: 'https://github.com/ganeshseemusiri/NXT-Trendz',
     live: 'https://ganeshnxttrendz.ccbp.tech/',
-  },
-  {
-    title: 'Todo Application',
-    description:
-      'Task management app to add, update, and delete todos with responsive UI.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/ganeshseemusiri/Todo-Application',
-    live: 'https://ganeshseemusiri.github.io/Todo-Application/',
   },
 ]
 
